@@ -1,0 +1,113 @@
+.navbar-nav i{
+	margin-right: 10px;
+}
+#logo{
+	height: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.header{
+	height: 100px;
+	background-color: #fff;
+}
+.hotline{
+	margin-top: 70px;
+	padding-bottom: 10px;
+}
+.phone{
+    left: 25px;
+    float: left;
+}
+.phone i{
+	margin-right: 10px;
+}
+.footer{
+    background-color: #3b89c9;
+    padding: 15px;
+    color: #fff;
+}
+.co-info .name{
+	font-weight: bold;
+	font-size: 18px;
+}
+.copyright{
+	font-style: italic;
+	margin-left: 15px;
+}
+.content-page{
+	position: relative;
+}
+.booking-box{
+	background-color: rgba(255, 255, 255, 0.8);
+    width: 350px;	
+	position: absolute;
+	top: 15px;
+	right: 12%;
+	padding: 15px;
+    z-index: 200;	
+}
+#dayGo, #dayReturn{
+    padding-right: 25px;
+	width: 100%;
+    display: inline;
+    margin-right: 10px;
+}
+.input-date span{
+	position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: -1;
+}
+#show-day-return{
+	display: none;
+}
+.label-color{
+	color: #000!important;
+}
+.form-group label.control-label{
+	color: #000;
+}
+input{
+	cursor: default;
+}
+.help-block{
+    display: inline-block!important;	
+}
+.book-button{
+	background-color: #3b89c9!important;
+    top: 12px;
+    right: 12px;
+}
+label code{
+	display: none;
+}
+@media screen and (max-width: 767px){
+	.hotline{
+	    display: none;
+	}
+	#logo{
+		width: 100%
+	}
+	.slide-box{
+		display: none;
+	}
+	.booking-box{
+		position: relative;
+		right: 0;
+		top: 0;
+		background-color: #EEE;
+		width: 100%
+	}
+	#dayGo, #dayReturn{
+		width: 85%;
+	}
+	.facebook{
+		display: none;
+	}
+	.help-block{
+		display: none!important;
+	}
+	label code{
+		display: inline;
+	}
+}

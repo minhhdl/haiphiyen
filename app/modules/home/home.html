@@ -1,0 +1,151 @@
+<div class="content-page">
+    <div class="container-fluid">
+        <div class="slide-box">
+            <div class="row">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="http://placehold.it/1600x600" alt="Flower">
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1600x600" alt="Flower">
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1600x600" alt="Flower">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-box">
+            <form role="form">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="radio">
+                            <label class="label-color">
+                                <input class="linked" type="radio" name="trip-type" value="oneWay" checked="">
+                                Một chiều
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="radio">
+                            <label class="label-color">
+                                <input class="linked" type="radio" name="trip-type" value="return">
+                                Khứ hồi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inputs">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="pickUp">Điểm đi</label>
+                                <input class="form-control" id="pickUp" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group label-floating is-empty">
+                                <label class="control-label" for="dropOff">Điểm đến</label>
+                                <input class="form-control" id="dropOff" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inputs">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="dayGo">Ngày đi</label>
+                                <div class="input-date">
+                                    <input class="form-control datepicker" readonly id="dayGo" type="text">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6" id="show-day-return">
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="dayReturn">Ngày về</label>
+                                <div class="input-date">
+                                    <input class="form-control datepicker" readonly id="dayReturn" type="text">
+                                    <span class="fa fa-calendar"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group label-static">
+                            <label class="control-label">Người lớn <code>Trên 12 tuổi</code></label>
+                            <select class="select form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <span class="help-block"><code>Trên 12 tuổi</code></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group label-static">
+                            <label class="control-label">Trẻ em <code>2 đến 12 tuổi</code></label>
+                            <select class="select form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <span class="help-block"><code>2 đến 12 tuổi</code></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="form-group label-static">
+                            <label class="control-label">Em bé <code>Dưới 2 tuổi</code></label>
+                            <select class="select form-control">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <span class="help-block"><code>Dưới 2 tuổi</code></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn btn-raised btn-info book-button pull-right">Tìm vé</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

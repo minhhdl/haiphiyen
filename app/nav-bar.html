@@ -1,0 +1,68 @@
+<div class="header">
+    <div class="container">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <img id="logo" src="app/img/logo.png">
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="hotline pull-right">
+                <span>Hotline: <a>0913.642.748</a> - <a>0914.650.511</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nav-page">
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+						<span class="phone navbar-toggle collapsed">
+							<i class="fa fa-phone"></i>0913.642.748
+						</span>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li *ngFor="let route of routeList" [class.active]="selected === route.name" (click)="onSelect(route.name)">
+                        <a [routerLink]="[route.name]"><i class="fa {{route.icon}}"></i>{{route.show}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<router-outlet></router-outlet>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="facebook">
+                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/vemaybayhaiphiyen" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=555&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fvemaybayhaiphiyen&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false">
+								<span style="vertical-align: bottom; width: 340px; height: 130px;">
+									<iframe name="fcf93c1a9917e4" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.6/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df1417e8dca3efe8%26domain%3Dbeta.vemaybayhaiphiyen.com%26origin%3Dhttp%253A%252F%252Fbeta.vemaybayhaiphiyen.com%252Ff51a5426e1568%26relation%3Dparent.parent&amp;container_width=555&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fvemaybayhaiphiyen&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false" style="border: none; visibility: visible; width: 340px; height: 130px;" class="">
+                                    </iframe>
+								</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="co-info">
+                    <span class="name">Đại lý vé máy bay Hải Phi Yến</span>
+                    <ul>
+                        <li>Địa chỉ: 665 Nguyễn Hữu Thọ, Q. Cẩm Lệ, TP. Đà Nẵng</li>
+                        <li>Hotline: 0913.642.748 - 0914.650.511</li>
+                        <li>Zalo: 0913.642.748</li>
+                        <li>Email: <a href="mailto:vemaybayhaiphiyen@gmail.com">vemaybayhaiphiyen@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <span class="copyright"><i class="fa fa-copyright"></i>2016 - Bản quyền của Công Ty Hải Phi Yến</span>
+        </div>
+    </div>
+</div>
