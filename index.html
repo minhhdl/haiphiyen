@@ -15,11 +15,11 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="../node_modules/es6-shim/es6-shim.min.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/zone.js/dist/zone.js"></script>
+    <script src="../node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
@@ -32,8 +32,147 @@
     <script src="app/js/ripples.min.js"></script>
     <script src="app/js/jquery.dropdown.min.js"></script>
     <script src="app/js/bootstrap-datepicker.min.js"></script>
+
+    <style>
+        #loading{
+            background-color: #3b89c9;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            margin-top: 0px;
+            top: 0px;
+            opacity: 1;
+        }
+        #loading-center{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 150px;
+            width: 150px;
+            margin-top: -75px;
+            margin-left: -75px;
+        }
+        .object{
+            width: 20px;
+            height: 20px;
+            background-color: #FFF;
+            float: left;
+            margin-right: 20px;
+            margin-top: 65px;
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+        }
+
+        #object_one {
+            -webkit-animation: object_one 1.5s infinite;
+            animation: object_one 1.5s infinite;
+        }
+        #object_two {
+            -webkit-animation: object_two 1.5s infinite;
+            animation: object_two 1.5s infinite;
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+        }
+        #object_three {
+            -webkit-animation: object_three 1.5s infinite;
+            animation: object_three 1.5s infinite;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+
+        }
+
+
+
+
+
+
+
+
+        @-webkit-keyframes object_one {
+            75% { -webkit-transform: scale(0); }
+        }
+
+        @keyframes object_one {
+
+            75% {
+                transform: scale(0);
+                -webkit-transform: scale(0);
+            }
+
+        }
+
+
+
+
+
+        @-webkit-keyframes object_two {
+
+
+            75% { -webkit-transform: scale(0); }
+
+
+        }
+
+        @keyframes object_two {
+            75% {
+                transform: scale(0);
+                -webkit-transform:  scale(0);
+            }
+
+        }
+
+        @-webkit-keyframes object_three {
+
+            75% { -webkit-transform: scale(0); }
+
+        }
+
+        @keyframes object_three {
+
+            75% {
+                transform: scale(0);
+                -webkit-transform: scale(0);
+            }
+
+        }
+        @-webkit-keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content-page{
+            min-height: 490px;
+        }
+        .hide-loading{
+            -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
+        }
+
+    </style>
 </head>
 <body>
-    <my-app>Loading...</my-app>
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+        </div>
+    </div>
+</div>
+<my-app>
+
+</my-app>
 </body>
 </html>

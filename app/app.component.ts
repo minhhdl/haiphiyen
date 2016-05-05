@@ -3,7 +3,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/route
 import { HomeComponent } from './modules/home/home';
 import { PromoComponent } from './modules/promo/promo';
 import { NewsComponent } from './modules/news/news';
-
+declare var $:any;
 @Component({
     selector: 'my-app',
     templateUrl: 'app/nav-bar.html',
@@ -49,5 +49,12 @@ export class AppComponent {
     ]
     onSelect = function(name){
         this.selected = name;
+    }
+    ngOnInit(){
+        $(window).ready(function(){
+            setTimeout(function(){
+                $('#loading').hide();
+            }, 200)
+        })
     }
 }
